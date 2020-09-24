@@ -54,6 +54,7 @@ nav ul .searchicon{
     display: flex;
     background: #f2f2f2;
     border-radius: 5px;
+    
 }
 
 
@@ -114,12 +115,13 @@ h1{
 
 }
 
-input{
+#head input{
     width: 100px;
     height: 20px;
     margin: 5px;
     border: 2px solid #564f6f;
     border-radius: 5px;
+    background-color: #d1d7e0;
     
 }
 
@@ -173,17 +175,41 @@ td{
 #survay{
     text-align: center;
 
-    
+}
 
+textarea{
+    background-color: #564f6f;
+    border: 1px solid #4c495d;
+    color: #d1d7e0;
 }
 
 .survay2 input{
     width: 200px;
+    background-color: #564f6f;
+    border-radius: 5px;
+    border: 1px solid #4c495d;
+}
+
+.txtareasubmit{
+display: flex;
+align-content: center;
+justify-content: center;
+  
+}
+
+.txtareasubmit input{
+    width: 100px;
+    border: 1px solid #4c495d;
+    background-color: #802bb1;
+    color: #d1d7e0;
+    border-radius: 5px;
 }
 
 h2{
     color: #802bb1;
     text-align: center;
+    margin-bottom: 60px;
+    
 }
 
 
@@ -191,7 +217,7 @@ h2{
 form {
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: baseline;
     
 }
 
@@ -212,6 +238,6 @@ footer{
     #primary { width:67%; }
     #secondary { width:30%; margin-left:3%;}
 
-    @media screen and (max-width: 768px) {
-        #primary { width:100%; }
-        #secondary { width:100%; margin:0; border:none; }
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none;}
