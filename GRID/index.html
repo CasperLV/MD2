@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Grid</title>
+</head>
+<body>
+    <div class="container">
+        <div class="flexed" id="header">
+            <h1>Time mesuring devices</h1>
+        </div>
+        <div class="flexed" id="nav">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+            <div class="flexed" id="main">
+                <h2>History of Telling Time timeline</h2>
+                    <p>Prehistoric man, by simple observation of the stars, changes   in the seasons, day and night began to come up with very primitive methods of measuring time. This was necessary for planning nomadic activity, farming, sacred feasts, etc..</p>
+                    
+                    <p>
+                    The earliest time measurement devices before clocks and watches were the sundial, hourglass and water clock. Find out more about these types of clock here</p>   
+                    
+                    <p>
+                        The forerunners to the sundial were poles and sticks as well as larger objects such as pyramids and other tall structures. Later the more formal sundial was invented. It is generally a round disk marked with the hours like a clock. It has an upright structure that casts a shadow on the disk - this is how time is measured with the sundial. </p>  
+                    
+                    <p>
+                    The hourglass was also used in ancient times. It was made up of two rounded glass bulbs connected by a narrow neck of glass between them. When the hourglass is turned upside down, a measured amount of sand particles stream through from the top to bottom bulb of glass. Today's egg timers are modern versions of the hourglass.</p>   
+                    
+                    <p>
+                    Another ancient time measurer was the water clock or clepsydra. It was a evenly marked container with a spout in which water dripped out. As the water dripped out of the container one could note by the water level against the markings what time it was.</p>   
+                    
+                    <p>
+
+                    A huge advance occurred in the 1300’s when mechanical clocks, which used weights or springs, began to appear. At first, they had no faces, and no hour or minute hands; rather, they struck a bell every hour. Later, clocks with hour, and then minute hands began to appear. These early mechanical clocks worked by using an escapement, a lever that pivoted and meshed with a toothed wheel at certain intervals. This controlled the movement, or "escape" of either the weights or the springs that were powering the clock, in order to regulate the speed at which the gears and wheels which measured the time turned.
+                    </p>   
+                    
+                    <p>
+                    In the 1400’s, another important discovery in timekeeping was made: it was learned that coiled springs, which used small coiled springs unwinding at a speed controlled by an escapement, were able to move the hands on a clock as well as weights or springs of previous, larger clocks. This discovery made smaller clocks, and later watches, possible.</p> 
+                    
+                    <p>
+                    Then, in 1656, Christiaan Huygens invented the pendulum clock, which used weights and a swinging pendulum. These clocks were much more accurate than previous clocks, off by less than a minute a day, compared to the 15 minutes a day of earlier clocks. The bigger the pendulum, the more accurate the clock was. </p> 
+                    
+                    <P>
+                    In 1714, the British Parliament offered a cash reward to anyone who could invent a clock accurate enough for use in navigation at sea. Thousands of sailors died because they were unable to find their exact position, because the exact time was needed to find longitude, and pendulum clocks would not work at sea. For every minute lost by a clock, it meant that there would be a navigational error of 15 miles, and sailors died because they were lost or smashed against rocks because they were unable to figure out their exact position. Then, in 1761, after 4 attempts, John Harrison finally succeeded at inventing a small clock accurate enough to use for navigation at sea. This tiny pocket watch lost only 5 seconds in 6 and ½ weeks.</P>  
+                    
+                    <p>  In the early 1800’s, one of the most important events in clock making occurred. Eli Terry developed machines, patterns, and techniques that produced clock parts that were exactly alike, so they could be mass-produced and interchanged from one clock to another. This drove the price of clocks way down, and allowed common people to own at least one, if not many, timekeeping devices.</p>
+                    
+                    <p>  At the dawn of the 20th century, only women wore wristwatches. No self-respecting "real man" would wear one. However, in the first World War, soldiers wore wristwatches because taking out a pocket watch to check the time was difficult or impossible in battle. After the war was over, it was considered "socially acceptable" to wear wrist watches, and they became popular. Half a century later, digital watches, which used electrical currents running through quartz crystals to cause vibration and tell the time very accurately, began to appear.</p>     
+                    <p>
+                    The next great advancement in timekeeping was in 1967, when the atomic clock, which used the oscillations of cesium-133 atoms to tell time, was invented. This clock had an error ratio of 1 second for every 1.4 million years. Recently, in 1999, scientists developed the cesium fountain atomic clock, which is off by only one second every 20 million years. This clock is the most accurate in the world.</p>
+        </div>
+        <div class="flexed" id="clockbox">
+            <div id="clock"></div>
+        </div>
+        <div class="flexed" id="asideadvertbox">
+            <img class="first" src="images/clock-animated-gif-18.gif" alt="clock gif">
+            <img src="images/clock-animated-gif-18.gif" alt="clock gif">
+            <img src="images/clock-animated-gif-18.gif" alt="clock gif">
+            <img src="images/clock-animated-gif-18.gif" alt="clock gif">
+            <img src="images/clock-animated-gif-18.gif" alt="clock gif">
+            <img src="images/clock-animated-gif-18.gif" alt="clock gif">
+            <img class="last_one" src="images/clock-animated-gif-18.gif" alt="clock gif">
+        </div>
+        <div class="flexed" id="footer">
+            <p>Autors: Kaspars Rubins</p>
+            <a href="mailto:kaspars.rubins@gmail.com">kaspars.rubins@gmail.com</a></p>
+        </div>
+        <script>
+        setInterval(() => {
+            let d = new Date() 
+            let hours = d.getHours()
+            let minutes = d.getMinutes()
+            let seconds = d.getSeconds()
+            let out = `${a(hours)}:${a(minutes)}:${a(seconds)}`
+            const el = document.getElementById('clock')
+            el.innerHTML = out
+        }, 1000);
+        
+        function a(b){
+            return b < 10 ? `0${b}` : b
+        }
+
+        </script>
+    </div>
+</body>
+</html> 
