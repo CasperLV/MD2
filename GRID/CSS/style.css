@@ -151,4 +151,8 @@ h2{
         "main main main"
         "footer footer footer";
     }
+
+    #asideadvertbox{
+        display: none;
+    }
 }
